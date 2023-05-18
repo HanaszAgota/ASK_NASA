@@ -11,23 +11,42 @@ const fetchApod = async function(url) {
 // explanation, date, eventListener - dinamikus
 // statikus soha nem lesz cserélve (dátumválasztó)
 const createSkeleton = function() {
+  
   const div1 = document.createElement('div')
   div1.classList.add('input-container')
 
   const div2 = document.createElement('div')
   div2.classList.add('data-container')
+
   rootElement.append(div1, div2)
 }
 
+
 const createApodElement = function(parentElement, data) {
   //parentElement.innerHTML = '' (az elem önmagát fűzi hozzá) 
+  const div1 = document.createElement('div')
+  div1.classList.add('input-container')
+
+  const date = document.createElement('date')
+  date.innerText = data.date
+  date.append(div1)
+
+  const div2 = document.createElement('div')
+  div2.classList.add('data-container')
+
   const h1 = document.createElement('h1')
   h1.innerText = data.title
+  h1.append(div2)
+
+  const explanation = document.createElement('explanation')
+  explanation.innerText = data.explanation 
+  explanation.append(div2)
 
   const img = document.createElement('img')
   img.src = data.url
+  img.append(div2)
 
-  parentElement.append(h1, img)
+  parentElement.append(date, explanation, h1, img)
 }
 
 const init = async function() {
