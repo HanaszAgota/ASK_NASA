@@ -17,16 +17,12 @@ const createSkeleton = function() {
 
   const div2 = document.createElement('div')
   div2.classList.add('data-container')
-
   rootElement.append(div1, div2)
 }
 
 
 const createApodElement = function(parentElement, data) {
   //parentElement.innerHTML = '' (az elem önmagát fűzi hozzá) 
-  const div1 = document.createElement('div')
-  div1.classList.add('input-container')
-
   const date = document.createElement('date')
   date.innerText = data.date
   date.append(div1)
