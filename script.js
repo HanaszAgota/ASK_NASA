@@ -30,3 +30,52 @@ const init = async function() {
 }
 
 init()
+
+// const API_KEY = '1Pj3D3xLuzlgf4xeuzJk28OfHUqQwe0LksLWgJLN'
+// const API_DATE = '2023-02-28'
+// const root = document.querySelector('#root')
+
+//   async function getFetch(url) {
+//   const response = await fetch(url)
+//   const apodData = await response.json() 
+  
+//   return apodData
+// }
+// console.log(
+//   getFetch(
+//     `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${API_DATE}`
+//   )
+// )
+
+// async function fetch2(url) {
+//   return fetch(url)
+//     .then((response) => response.json())
+//   //.then((apodData) => apodData)
+// }
+
+//   function getElements() {
+//     let a = async function() {
+//     const response = await fetch2 (
+//       `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${API_DATE}`
+//     )
+
+//   const h1 = document.createElement('h1')
+//   h1.innerText = title
+
+//   const p = document.createElement ('p')
+
+//   const img = document.createElement('img')
+//   img.src = url
+
+//   root.append(h1, p, img)
+//   a()
+//   }
+// }
+// getElements()
+
+// // const init = async function() {
+// //   const apodData = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${API_DATE}`)
+// //   createElement(h1.title, img.url, p)
+// // }
+
+// // init()
