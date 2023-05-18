@@ -4,3 +4,21 @@
     margin: 0;
 }
 
+#root {
+    
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+}
+
+.data-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 800px;
+}
