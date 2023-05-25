@@ -5,19 +5,27 @@
 }
 
 #root {
-    
+   width: 1024px;
+   padding: 20px;
+   margin: 20px;
+   text-align: center;
+   font-size: 16px;
 }
 
-.input-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.section {
+    flex-direction: row;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 10px;
 }
 
-.data-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 800px;
+#date {
+    text-align: center;
+    font-size: 24px;
 }
+
+.label {
+    font-size: 30px;
+}
+
+
